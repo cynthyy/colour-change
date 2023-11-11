@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div id="clickme" style="width: 200px; height: 200px; background-color: purple"></div>
+    <button id="hey">click me please</button>
+
+    <script>
+        $(document).ready(function () {
+            $("#hey").click(function(){
+                $("#clickme").fadeIn(3000);
+                $("#clickme").css('background-color', 'pink');
+            });
+        });
+    </script>
+</body>
+</html>
